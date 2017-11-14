@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FED649</color>
+    <color name="colorPrimaryDark">#FED649</color>
+    <color name="colorAccent">#F9448C</color>
+    <!--<color name="colorAccent">#8377FC</color>-->
+    <color name="windowBackground">#F8FAF9</color>
+    <color name="EditTextFill">#F8F8F8</color>
+    <color name="EditTextBorder">#95989A</color>
+    <color name="UnfilledText">#95989A</color>
+    <color name="FilledText">#95989A</color>
+    <color name="HamburgerIconColor">#95989A</color>
+    <color name="BosmTextColor">#95989A</color>
+    <color name="DetailHeading">#393939</color>
+    <color name="DetailDetail">#95989A</color>
+    <color name="Events">#EF6380</color>
+    <color name="Ongoing">#5E3670</color>
+    <color name="Schedule">#046963</color>
+    <color name="Results">#1D049B</color>
+    <color name="roundColor">#393939</color>
+    <color name="tdvColor">#95989A</color>
+    <color name="teamColor">#747474</color>
+    <color name="vsColor">#8377FC</color>
+</resources>

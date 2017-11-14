@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/page1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="#FFD548">
+
+        <ImageView
+            android:id="@+id/hamburgerIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="20dp"
+            app:srcCompat="@drawable/ic_dehaze_black_24px" />
+
+
+        <TextView
+            android:id="@+id/bosmTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BOSM'17"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/sportsLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Select Sport"
+                android:textColor="#757578"
+                android:textColorHint="#05ab9a" />
+
+            <Button
+                android:id="@+id/addSport"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent"
+                android:elevation="5dp"
+                android:text="Add Sport"
+                android:textColor="#ffffff" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sportsAdded"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swipe to Remove Sports"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:textColor="@color/colorAccent"/>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/done"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:text="DONE"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="20dp"
+                app:pb_colorNormal="@color/colorAccent"
+                app:pb_colorPressed="@color/colorAccent"
+                app:pb_textComplete="SUCCESS"
+                app:pb_textProgress="PROCESSING"
+                app:pb_textError="ERROR"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

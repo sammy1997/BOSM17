@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="#FFD548">
+
+        <ImageView
+            android:id="@+id/hamburgerIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="20dp"
+            app:srcCompat="@drawable/ic_dehaze_black_24px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Team Registrations"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/page3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Registrations for Hockey"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="This is a team event. Total number of participants must be between 11 and 18" />
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:clipChildren="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/captainName"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/focuser"
+                        android:ems="10"
+                        android:hint="Name of Team Captain"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15dp"
+                        android:textColor="#757575"
+                        android:textColorHint="#BFC2C3" />
+
+                    <EditText
+                        android:id="@+id/captainEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/focuser"
+                        android:ems="10"
+                        android:hint="E-Mail of Team Captain"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15dp"
+                        android:textColor="#757575"
+                        android:textColorHint="#BFC2C3" />
+
+                    <EditText
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignLeft="@+id/captainEmail"
+                        android:layout_alignStart="@+id/captainEmail"
+                        android:layout_below="@+id/captainEmail"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/focuser"
+                        android:ems="10"
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:paddingLeft="15dp"
+                        android:textColor="#757575"
+                        android:textColorHint="#BFC2C3" />
+
+                    <EditText
+                        android:id="@+id/coachName"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignLeft="@+id/phoneNumber"
+                        android:layout_alignStart="@+id/phoneNumber"
+                        android:layout_below="@+id/phoneNumber"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/focuser"
+                        android:ems="10"
+                        android:hint="Coach Name"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15dp"
+                        android:textColor="#757575"
+                        android:textColorHint="#BFC2C3" />
+
+                    <RadioGroup
+                        android:id="@+id/radioSex"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:textColor="#757575"
+                        android:textColorHint="#BFC2C3"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33"
+                            android:text="Gender"
+                            android:textColor="#757575"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33"
+                            android:text="Male"
+                            android:textColor="#757575" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33"
+                            android:text="Female"
+                            android:textColor="#757575" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/addMemberLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:clipChildren="false"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipChildren="false"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/member"
+                                android:layout_width="0dp"
+                                android:layout_height="36dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/focuser"
+                                android:hint="Name of Team Member"
+                                android:paddingLeft="15dp"
+                                android:textColor="#757575"
+                                android:layout_marginTop="10dp"
+                                android:textColorHint="#BFC2C3" />
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/addMember"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/plus" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                app:pb_colorNormal="@color/colorAccent"
+                app:pb_colorPressed="@color/colorAccent"
+                app:pb_textComplete="SUCCESS"
+                app:pb_textError="ERROR"
+                app:pb_textProgress="PROCESSING" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+
